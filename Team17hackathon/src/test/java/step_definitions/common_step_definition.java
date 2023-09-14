@@ -38,7 +38,7 @@ public class common_step_definition {
 
 	@After
 	public void afterScenario() {
-		// DriverManager.getDriver().quit();
+		 DriverManager.getDriver().quit();
 	}
 
 }

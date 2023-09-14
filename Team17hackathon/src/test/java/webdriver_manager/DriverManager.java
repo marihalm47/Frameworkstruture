@@ -26,7 +26,7 @@ public class DriverManager {
 			switch (Constants.BROWSER) {
 			case "chrome":
 				// System.setProperty("webdriver.chrome.driver", null);
-				WebDriverManager.chromedriver().setup();
+				//WebDriverManager.chromedriver().setup();
 				LOGGER.info("Launched " + Constants.BROWSER);
 				driver = new ChromeDriver();
 				break;

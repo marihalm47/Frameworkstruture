@@ -18,14 +18,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import constants.Constants;
 import io.qameta.allure.Allure;
-import page_objects.ArrayPage;
-import page_objects.Datastructure;
-import page_objects.HomePage;
-import page_objects.Linkedlistpage;
-import page_objects.QueuePage;
-import page_objects.Registerpage;
-import page_objects.SigninPage;
-import page_objects.Stackpage;
+import page_objects.ClassPageObject;
 import webdriver_manager.DriverManager;
 
 public class common_utils {
@@ -73,14 +66,7 @@ public class common_utils {
 
 	// All the page class has to be initialized in this method
 	public void initWebElements() {
-		PageFactory.initElements(DriverManager.getDriver(), HomePage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), Registerpage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), SigninPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), ArrayPage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), QueuePage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), Stackpage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), Linkedlistpage.getInstance());
-		PageFactory.initElements(DriverManager.getDriver(), Datastructure.getInstance());
+		PageFactory.initElements(DriverManager.getDriver(), ClassPageObject.getInstance());
 	}
 
 	public ArrayList<ArrayList<String>> readExcelData() {
